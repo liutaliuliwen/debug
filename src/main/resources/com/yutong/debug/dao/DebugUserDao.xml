@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yutong.debug.dao.DebugUserDao">
+  <resultMap id="BaseResultMap" type="com.yutong.debug.dao.po.DebugUserDo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="username" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="password" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="phone_number" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="user_level" javaType="java.lang.Byte" jdbcType="TINYINT" />
+      <arg column="user_state" javaType="java.lang.Byte" jdbcType="TINYINT" />
+      <arg column="weixin_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="id_card" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="last_login_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="remarks" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+</mapper>

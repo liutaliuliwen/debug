@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <!--<logger name="com.xiaofangtech.sunt.controller" level="WARN" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+    <logger name="com.xiaofangtech.sunt.helper" level="WARN" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>-->
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoder defaults to ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%logger{5}:%line] - %m%n
+            </pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
+        </encoder>
+        <!-- Only log level WARN and above -->
+    </appender>
+    <logger name="com.yutong" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

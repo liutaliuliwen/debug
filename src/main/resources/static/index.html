@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>宇通干燥业务系统</title>
+    <!--&lt;!&ndash; 最新版本的 Bootstrap 核心 CSS 文件 &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+    <!--&lt;!&ndash; 可选的 Bootstrap 主题文件（一般不用引入） &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+    <!--&lt;!&ndash; 最新的 Bootstrap 核心 JavaScript 文件 &ndash;&gt;-->
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row page-header">
+            <h1 class="col-md-6 col-xs-9 col-md-offset-3 col-xs-offset-3 text-center">欢迎来到宇通干燥业务系统</h1>
+        </div>
+
+        <div class="row">
+            <form action="/user/login" method="post" class="col-md-4 col-xs-6 col-md-offset-4 col-xs-offset-3">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" name="username" id="username" placeholder="请输入用户名" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input name="password" id="password" type="password" placeholder="请输入密码" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-default">登陆</button>
+                <a class="btn btn-default"  href="/register.html">注册</a>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

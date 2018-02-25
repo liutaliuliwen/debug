@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>宇通干燥业务系统</title>
+    <!--&lt;!&ndash; 最新版本的 Bootstrap 核心 CSS 文件 &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+    <!--&lt;!&ndash; 可选的 Bootstrap 主题文件（一般不用引入） &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+    <!--&lt;!&ndash; 最新的 Bootstrap 核心 JavaScript 文件 &ndash;&gt;-->
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="jQuery/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row page-header">
+            <h1 class="col-md-6 col-xs-9 col-md-offset-3 col-xs-offset-3 text-center">欢迎来到宇通干燥业务系统</h1>
+        </div>
+
+        <!--/**-->
+        <!--* 主键 系统自动生成-->
+        <!--*/-->
+        <!--@Id-->
+        <!--@GeneratedValue(generator = "JDBC")-->
+        <!--private Integer id;-->
+
+        <!--/**-->
+        <!--* 调试用户id-->
+        <!--*/-->
+        <!--@Column(name = "debug_user_id")-->
+        <!--private Integer debugUserId;-->
+
+        <!--/**-->
+        <!--* 单位名称-->
+        <!--*/-->
+        <!--@Column(name = "company_name")-->
+        <!--private String companyName;-->
+
+        <!--/**-->
+        <!--* 设备型号-->
+        <!--*/-->
+        <!--@Column(name = "equipment_name")-->
+        <!--private String equipmentName;-->
+
+        <!--/**-->
+        <!--* 物料名称-->
+        <!--*/-->
+        <!--@Column(name = "material_name")-->
+        <!--private String materialName;-->
+
+        <!--/**-->
+        <!--* 湿份名称-->
+        <!--*/-->
+        <!--@Column(name = "moisture_content")-->
+        <!--private Float moistureContent;-->
+
+        <!--/**-->
+        <!--* 投料量（kg/h）-->
+        <!--*/-->
+        <!--@Column(name = "feeding_amount")-->
+        <!--private Float feedingAmount;-->
+
+        <!--/**-->
+        <!--* 原料湿含量（w/w%）-->
+        <!--*/-->
+        <!--@Column(name = "inlet_humidity_ratio")-->
+        <!--private Float inletHumidityRatio;-->
+
+        <!--/**-->
+        <!--* 原料初始状态：1溶液  2浆状  3块状物料 4散粒状物料  5粉状物料（目数：_____目）-->
+        <!--6无定形的生物植物类物料-->
+
+        <!--*/-->
+        <!--@Column(name = "raw_material_state")-->
+        <!--private Integer rawMaterialState;-->
+
+        <!--/**-->
+        <!--* 原料目数-->
+        <!--*/-->
+        <!--@Column(name = "raw_material_mesh")-->
+        <!--private Integer rawMaterialMesh;-->
+
+        <!--/**-->
+        <!--* 物料熔点-->
+        <!--*/-->
+        <!--@Column(name = "melting_point")-->
+        <!--private Float meltingPoint;-->
+
+        <!--/**-->
+        <!--* 热源型式：□蒸汽（蒸气压（现场表压）：________MPa）  □导热油（压力：______MPa；温度：______℃）□热水（压力：______MPa；温度：______℃）-->
+
+        <!--*/-->
+        <!--@Column(name = "heat_source_type")-->
+        <!--private Integer heatSourceType;-->
+
+        <!--/**-->
+        <!--* 热源温度-->
+        <!--*/-->
+        <!--@Column(name = "heat_source_temperature")-->
+        <!--private Float heatSourceTemperature;-->
+
+        <!--/**-->
+        <!--* 热源压力-->
+        <!--*/-->
+        <!--@Column(name = "heat_source_pressure")-->
+        <!--private Float heatSourcePressure;-->
+
+        <!--/**-->
+        <!--* 原料进料温度（℃）-->
+        <!--*/-->
+        <!--@Column(name = "inlet_material_temperature")-->
+        <!--private Float inletMaterialTemperature;-->
+
+        <!--/**-->
+        <!--* 进风温度（℃）-->
+        <!--*/-->
+        <!--@Column(name = "inlet_air_temperature")-->
+        <!--private Float inletAirTemperature;-->
+
+        <!--/**-->
+        <!--* 出风温度（℃）-->
+        <!--*/-->
+        <!--@Column(name = "outlet_air_temperature")-->
+        <!--private Float outletAirTemperature;-->
+
+        <!--/**-->
+        <!--* 冷却风温度（℃）-->
+        <!--*/-->
+        <!--@Column(name = "cool_air_temperature")-->
+        <!--private Float coolAirTemperature;-->
+
+        <!--/**-->
+        <!--* 出料温度（℃）-->
+        <!--*/-->
+        <!--@Column(name = "outlet_material_temperature")-->
+        <!--private Float outletMaterialTemperature;-->
+
+        <!--/**-->
+        <!--* 产量（kg/h）-->
+        <!--*/-->
+        <!--private Float output;-->
+
+        <!--/**-->
+        <!--* 终水分（w/w%）-->
+        <!--*/-->
+        <!--@Column(name = "outlet_humidity_ratio")-->
+        <!--private Float outletHumidityRatio;-->
+
+        <!--/**-->
+        <!--* 其他（问题与建议）-->
+        <!--*/-->
+        <!--private String remarks;-->
+
+        <!--/**-->
+        <!--* 调试上传时间-->
+        <!--*/-->
+        <!--@Column(name = "upload_time")-->
+        <!--private Date uploadTime;-->
+
+        <!--/**-->
+        <!--* 调试用户名称-->
+        <!--*/-->
+        <!--@Column(name = "upload_user")-->
+        <!--private String uploadUser;-->
+
+        <div class="row">
+            <form action="/debug/upload" method="post" class="col-md-4 col-xs-6 col-md-offset-4 col-xs-offset-3">
+                <div class="form-group">
+                    <label for="company_name">单位名称</label>
+                    <input type="text" name="companyName" id="company_name" placeholder="请输入单位名称" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="equipment_name">设备名称</label>
+                    <input name="equipmentName" id="equipment_name" placeholder="请输入设备名称" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="material_name">物料名称</label>
+                    <input name="materialName" id="material_name" placeholder="请输入物料名称" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="moisture_content">湿分名称</label>
+                    <input name="moistureContent" id="moisture_content"  placeholder="请输入湿分名称" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="feeding_amount">投料量（kg/h）</label>
+                    <input name="feedingAmount" id="feeding_amount" placeholder="请输入投料量（kg/h）" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inlet_humidity_ratio">原料湿含量（w/w%）</label>
+                    <input name="inletHumidityRatio" id="inlet_humidity_ratio" placeholder="原料湿含量（w/w%）" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>原料初始状态</label>
+                    <div class="radio">
+                        <label><input type="radio" name="rawMaterialState" value="1">溶液</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="rawMaterialState" value="2">浆液</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="rawMaterialState" value="3">块状物料</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="rawMaterialState" value="4">散粒状物料</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="rawMaterialState" value="6" id="raw_material_state_6">无定形的生物植物类物料</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="rawMaterialState" value="5" id="raw_material_state_5">粉状物料</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="raw_material_mesh">目数</label>
+                        <input disabled type="text" name="rawMaterialMesh" id="raw_material_mesh" placeholder="请输入物料目数" class="form-control"  >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="melting_point">物料熔点</label>
+                    <input name="meltingPoint" id="melting_point" placeholder="请输入物料熔点" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>热源型式</label>
+                    <input type="radio" name="heatSourceType" value="1" id="heat_source_type_1"> <label for="heat_source_type_1">蒸汽</label>
+                    <div class="form-group">
+                        <label for="heat_source_pressure_1">蒸气压（现场表压）MPa</label>
+                        <input  type="text" name="heat_source_pressure" id="heat_source_pressure_1" placeholder="请蒸气压" class="form-control"  >
+                    </div>
+                    <input type="radio" name="heatSourceType" value="1" id="heat_source_type_2"> <label for="heat_source_type_2">导热油</label>
+                    <div class="form-group">
+                        <label for="heat_source_pressure_2">压力MPa</label>
+                        <input  type="text" name="heat_source_pressure" id="heat_source_pressure_2" placeholder="请输入导热油压力" class="form-control"  >
+                    </div>
+                    <div class="form-group">
+                        <label for="heat_source_temperature_2">温度（℃）</label>
+                        <input  type="text" name="heat_source_temperature" id="heat_source_temperature_2" placeholder="请输入导热油温度" class="form-control"  >
+                    </div>
+                    <input type="radio" name="heatSourceType" value="1" id="heat_source_type_3"> <label for="heat_source_type_3">热水</label>
+                    <div class="form-group">
+                        <label for="heat_source_pressure_3">压力MPa</label>
+                        <input  type="text" name="heat_source_pressure" id="heat_source_pressure_3" placeholder="请输入热水压力" class="form-control"  >
+                    </div>
+                    <div class="form-group">
+                        <label for="heat_source_temperature_3">温度（℃）</label>
+                        <input  type="text" name="heat_source_temperature" id="heat_source_temperature_3" placeholder="请输入热水温度" class="form-control"  >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inlet_material_temperature">原料进料温度（℃）</label>
+                    <input name="inletMaterialTemperature" id="inlet_material_temperature" placeholder="请输入原料进料温度" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="inlet_air_temperature">进风温度（℃）</label>
+                    <input name="inletAirTemperature" id="inlet_air_temperature" placeholder="请输入进风温度" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="outlet_air_temperature">出风温度（℃）</label>
+                    <input name="outletAirTemperature" id="outlet_air_temperature" placeholder="请输入出风温度" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="cool_air_temperature">冷却风温度（℃）</label>
+                    <input name="coolAirTemperature" id="cool_air_temperature" placeholder="请输入冷却风温度" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="outlet_material_temperature">出料温度（℃）</label>
+                    <input name="outletMaterialTemperature" id="outlet_material_temperature" placeholder="请输入出料温度" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="output">产量（kg/h）</label>
+                    <input name="output" id="output" placeholder="请输入产量（kg/h）" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="outlet_humidity_ratio">终水分（w/w%）</label>
+                    <input name="outletHumidityRatio" id="outlet_humidity_ratio" placeholder="请输入终水分" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="remarks">问题与建议</label>
+                    <input name="remarks" id="remarks" placeholder="请输入问题与建议" class="form-control">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-default">提交</button>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="js/debug_info.js"></script>
+</body>
+</html>

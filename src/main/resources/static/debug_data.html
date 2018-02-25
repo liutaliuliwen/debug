@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row page-header">
+            <h1 class="col-md-6 col-xs-9 col-md-offset-3 col-xs-offset-3 text-center">欢迎来到宇通干燥业务系统</h1>
+        </div>
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="company_name" class="col-sm-offset-3 col-sm-2 control-label">单位名称</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="company_name" placeholder="请输入单位名称">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="equipment_name" class="col-sm-offset-3 col-sm-2 control-label">设备型号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="equipment_name" placeholder="请输入设备型号">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="material_name" class="col-sm-offset-3 col-sm-2 control-label">物料名称</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="material_name" placeholder="请输入物料名称">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-5 col-sm-10">
+                    <button type="submit" class="btn btn-default">查询</button>
+                </div>
+            </div>
+        </form>
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+               <tr>
+                   <th>单位名称</th>
+                   <th>设备型号</th>
+                   <th>物料名称</th>
+                   <th>湿份名称</th>
+                   <th>投料量（kg/h）</th>
+                   <th>原料湿含量（w/w%）</th>
+                   <th>原料初始状态</th>
+                   <th>物料熔点</th>
+                   <th>热源型式</th>
+                   <th>热源压力</th>
+                   <th>热源温度</th>
+                   <th>原料进料温度（℃） </th>
+                   <th>进风温度（℃）</th>
+                   <th>出风温度（℃）</th>
+                   <th>冷却风温度（℃）</th>
+                   <th>出料温度（℃）</th>
+                   <th>产量（kg/h）</th>
+                   <th>终水分（w/w%）</th>
+                   <th>其他（问题与建议）</th>
+               </tr>
+                <tr>
+                    <td>无锡远东机械设备有限公司</td>
+                    <td>SKG-10</td>
+                    <td>氯化钠</td>
+                    <td>水</td>
+                    <td>1000</td>
+                    <td>11</td>
+                    <th>溶液</th>
+                    <th>120</th>
+                    <th>导热油</th>
+                    <th>1.1</th>
+                    <th>200</th>
+                    <th>200</th>
+                    <th>30</th>
+                    <th>60</th>
+                    <th>50</th>
+                    <th>30</th>
+                    <th>10</th>
+                    <th>1.1</th>
+                    <th>无</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

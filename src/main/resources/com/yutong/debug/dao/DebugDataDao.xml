@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yutong.debug.dao.DebugDataDao">
+  <resultMap id="BaseResultMap" type="com.yutong.debug.dao.po.DebugDataDo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="debug_user_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="company_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="equipment_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="material_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="moisture_content" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="feeding_amount" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="inlet_humidity_ratio" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="raw_material_state" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="raw_material_mesh" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="melting_point" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="heat_source_type" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="heat_source_temperature" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="heat_source_pressure" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="inlet_material_temperature" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="inlet_air_temperature" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="outlet_air_temperature" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="cool_air_temperature" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="outlet_material_temperature" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="output" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="outlet_humidity_ratio" javaType="java.lang.Float" jdbcType="REAL" />
+      <arg column="remarks" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="upload_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="upload_user" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+</mapper>

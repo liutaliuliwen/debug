@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>注册页面</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <h1 class="col-md-6">宇通干燥调试人员注册信息</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <form action="/user/register" method="post">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="form-group col-md-4">
+                    <label for="username">用户名称</label>
+                    <input type="text" name="username" id="username" class="form-control" placeholder="请输入您的用户名">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="form-group col-md-4">
+                    <label for="password">密码</label>
+                    <input type="password" name="password" id="password"  class="form-control" placeholder="请输入您的密码6到20位必须包含英文和数字">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="form-group col-md-4">
+                    <label for="checkPassword">确认密码</label>
+                    <input type="password" id="checkPassword" placeholder="请再次输入密码" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="form-group col-md-4">
+                    <label for="telephoneNumber">手机号码</label>
+                    <input type="text" name="telephoneNumber" id="telephoneNumber" placeholder="请输入您的手机号码" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="form-group col-md-4">
+                    <label for="idCard">身份证号码</label>
+                    <input type="text" name="idCard" id="idCard" placeholder="请输入您的身份证号码" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6"></div>
+                <button type="submit" class="btn btn-primary">注册</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
